@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
@@ -20,9 +20,17 @@ type LoginForm = z.infer<typeof loginSchema>;
 
 export default function LoginPage() {
   const router = useRouter();
-  const { login } = useAuthStore();
+  const { login, isAuthenticated } = useAuthStore();
   const [showPassword, setShowPassword] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
+
+  // Redirect once authenticated — fires outside the form-submit event,
+  // which avoids Chrome credential-manager / navigation interference.
+  useEffect(() => {
+    if (isAuthenticated) {
+      router.replace('/dashboard');
+    }
+  }, [isAuthenticated, router]);
 
   const {
     register,
@@ -37,10 +45,9 @@ export default function LoginPage() {
     try {
       await login(data.login, data.password);
       toast.success('Welcome back!');
-      router.push('/dashboard');
+      // Navigation is handled by the useEffect above when isAuthenticated flips to true.
     } catch (error: any) {
       toast.error(error.response?.data?.error || 'Invalid credentials');
-    } finally {
       setIsLoading(false);
     }
   };

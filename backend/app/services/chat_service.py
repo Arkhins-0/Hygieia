@@ -182,7 +182,7 @@ that explains the results in simple terms. Include:
 {user_context}
 {analysis_context}
 
-Please provide a concise summary (2-3 paragraphs) that is informative yet reassuring."""
+Please provide a concise summary (1 paragraph) that is informative yet reassuring."""
 
         try:
             response = self.client.models.generate_content(
@@ -190,7 +190,6 @@ Please provide a concise summary (2-3 paragraphs) that is informative yet reassu
                 contents=prompt,
                 config=types.GenerateContentConfig(
                     system_instruction=SYSTEM_PROMPT,
-                    max_output_tokens=512,
                     temperature=0.7
                 )
             )
