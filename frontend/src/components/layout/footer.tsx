@@ -14,9 +14,9 @@ const footerLinks = {
 };
 
 const socialLinks = [
-  { name: 'Website', href: 'https://krishna-vijay-g.github.io', icon: Globe },
+  { name: 'Website', href: 'https://arkhins.com', icon: Globe },
   { name: 'GitHub', href: 'https://github.com', icon: Github },
-  { name: 'LinkedIn', href: 'https://linkedin.com/in/krishna-vijay', icon: Linkedin },
+  { name: 'LinkedIn', href: 'https://linkedin.com/in/arkhins', icon: Linkedin },
 ];
 
 export function Footer() {

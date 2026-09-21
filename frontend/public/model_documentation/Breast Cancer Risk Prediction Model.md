@@ -5,7 +5,7 @@
 <div align="center">
   <h1>Breast Cancer Risk Prediction Model</h1>
   <strong>XGBoost Ensemble Classifier for Population-Level Breast Cancer Risk Screening</strong><br/>
-  <em><a href="https://Krishna-Vijay-G.github.io">Krishna Vijay G</a> • Hygieia AI Healthcare Platform</em>
+  <em><a href="https://arkhins.com">Arkhins</a> • Hygieia AI Healthcare Platform</em>
 </div>
 </div>
 
@@ -645,5 +645,5 @@ Status: PRODUCTION READY ✅
 <p align="center">
   <strong>Breast Cancer Risk Predictive Model v1.0</strong><br/>
   <em>Hygieia AI Healthcare Platform</em><br/>
-  <a href="https://Krishna-Vijay-G.github.io">Krishna Vijay G</a>
+  <a href="https://arkhins.com">Arkhins</a>
 </p>

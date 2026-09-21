@@ -45,8 +45,8 @@ MODEL_INFO = {
     'version': '1.0',
     'dataset': 'Wisconsin Diagnosis Dataset - UCI',
     'modified_date': '2026-01-04',
-    'author': 'Krishna Vijay G',
-    'auth_url': 'https://Krishna-Vijay-G.github.io',
+    'author': 'Arkhins',
+    'auth_url': 'https://arkhins.com',
     'training_date': '2025-12-31',
     'performance': {
         'test_accuracy': 0.972,

@@ -5,7 +5,7 @@
 <div align="center">
   <h1>Breast Cancer Tissue Diagnosis Model</h1>
   <strong>Stacking Ensemble Classifier for FNA Biopsy Malignancy Classification</strong><br/>
-  <em><a href="https://Krishna-Vijay-G.github.io">Krishna Vijay G</a> • Hygieia AI Healthcare Platform</em>
+  <em><a href="https://arkhins.com">Arkhins</a> • Hygieia AI Healthcare Platform</em>
 </div>
 </div>
 
@@ -697,5 +697,5 @@ Status: PRODUCTION READY ✅
 <p align="center">
   <strong>Breast Cancer Tissue Diagnostic Model v1.0</strong><br/>
   <em>Hygieia AI Healthcare Platform</em><br/>
-  <a href="https://Krishna-Vijay-G.github.io">Krishna Vijay G</a>
+  <a href="https://arkhins.com">Arkhins</a>
 </p>

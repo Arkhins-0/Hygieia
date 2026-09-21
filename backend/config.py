@@ -77,24 +77,45 @@ class Config:
     # DATABASE CONFIGURATION
     # =============================================================================
     DATABASE_URL = os.getenv("DATABASE_URL")
-    
+
     # SQLAlchemy configuration
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     SQLALCHEMY_ENGINE_OPTIONS = {
         'pool_recycle': 300,
         'pool_pre_ping': True
     }
-    
+
     # Set database URI
     if DATABASE_URL:
-        # Handle Supabase PostgreSQL
+        # Handle Supabase PostgreSQL connection URLs that may use the old prefix
         if DATABASE_URL.startswith('postgres://'):
             SQLALCHEMY_DATABASE_URI = DATABASE_URL.replace('postgres://', 'postgresql://', 1)
         else:
             SQLALCHEMY_DATABASE_URI = DATABASE_URL
     else:
-        # Fallback to SQLite for local development
-        SQLALCHEMY_DATABASE_URI = 'sqlite:///hygieia.db'
+        # If individual DB_* environment variables are provided (common in .env),
+        # build a proper SQLAlchemy PostgreSQL URI automatically so users don't
+        # need to set DATABASE_URL explicitly.
+        DB_HOST = os.getenv('DB_HOST')
+        DB_PORT = os.getenv('DB_PORT', '5432')
+        DB_NAME = os.getenv('DB_NAME', 'postgres')
+        DB_USER = os.getenv('DB_USER')
+        DB_PASSWORD = os.getenv('DB_PASSWORD')
+
+        if DB_HOST and DB_USER and DB_PASSWORD:
+            # URL-encode credentials
+            try:
+                from urllib.parse import quote_plus
+            except Exception:
+                # Python <3 fallback (shouldn't be necessary)
+                from urllib import quote_plus
+
+            user = quote_plus(DB_USER)
+            password = quote_plus(DB_PASSWORD)
+            SQLALCHEMY_DATABASE_URI = f"postgresql://{user}:{password}@{DB_HOST}:{DB_PORT}/{DB_NAME}"
+        else:
+            # Fallback to SQLite for local development
+            SQLALCHEMY_DATABASE_URI = 'sqlite:///hygieia.db'
     
     # =============================================================================
     # FILE UPLOAD CONFIGURATION

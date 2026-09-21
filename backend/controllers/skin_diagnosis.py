@@ -80,8 +80,8 @@ MODEL_INFO = {
     'version': '1.0',
     'dataset': 'HAM10000 Dataset - ISIC',
     'modified_date': '2026-01-05',
-    'author': 'Krishna Vijay G',
-    'auth_url': 'https://Krishna-Vijay-G.github.io',
+    'author': 'Arkhins',
+    'auth_url': 'https://arkhins.com',
     'training_date': '2026-01-04',
     'performance': {
         'test_accuracy': 0.9884313969399179,

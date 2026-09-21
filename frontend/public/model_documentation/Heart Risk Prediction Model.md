@@ -5,7 +5,7 @@
 <div align="center">
   <h1>Heart Risk Predictive Model</h1>
   <strong>AdaBoost Ensemble Classifier for Cardiovascular Risk Assessment</strong><br/>
-  <em><a href="https://Krishna-Vijay-G.github.io">Krishna Vijay G</a> • Hygieia AI Healthcare Platform</em>
+  <em><a href="https://arkhins.com">Arkhins</a> • Hygieia AI Healthcare Platform</em>
 </div>
 </div>
 
@@ -478,5 +478,5 @@ Status: PRODUCTION READY ✅
 <p align="center">
   <strong>Heart Risk Predictive Model v1.0</strong><br/>
   <em>Hygieia AI Healthcare Platform</em><br/>
-  <a href="https://Krishna-Vijay-G.github.io">Krishna Vijay G</a>
+  <a href="https://arkhins.com">Arkhins</a>
 </p>

@@ -2,14 +2,14 @@
   "team": [
     {
       "id": "founder-1",
-      "name": "Mr. Krishna Vijay G",
+      "name": "Mr. Arkhins",
       "title": "Founder",
       "role": "Backend & AI Architect",
       "description": "Even if I die, you're the one who must survive.",
       "expertise": ["U22AI024", "AI04", "BIHER"],
       "image": "/data/images/founder-1.jpg",
-      "linkedin": "https://linkedin.com/in/krishna-vijay",
-      "email": "krishnavijay.gkv@gmail.com"
+      "linkedin": "https://linkedin.com/in/arkhins",
+      "email": "arkhins@arkhins.com"
     },
     {
       "id": "founder-2",

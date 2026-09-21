@@ -5,7 +5,7 @@
 <div align="center">
   <h1>Skin Lesion Diagnostic Model</h1>
   <strong>CNN Voting Ensemble with Derm Foundation for Multi-Class Skin Disease Classification</strong><br/>
-  <em><a href="https://Krishna-Vijay-G.github.io">Krishna Vijay G</a> • Hygieia AI Healthcare Platform</em>
+  <em><a href="https://arkhins.com">Arkhins</a> • Hygieia AI Healthcare Platform</em>
 </div>
 </div>
 
@@ -769,5 +769,5 @@ Status: PRODUCTION READY ✅
 <p align="center">
   <strong>Skin Lesion Diagnostic Model v4.0</strong><br/>
   <em>Hygieia AI Healthcare Platform</em><br/>
-  <a href="https://Krishna-Vijay-G.github.io">Krishna Vijay G</a>
+  <a href="https://arkhins.com">Arkhins</a>
 </p>

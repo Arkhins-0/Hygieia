@@ -5,7 +5,7 @@
 <div align="center">
   <h1>Diabetes Risk Predictive Model</h1>
   <strong>LightGBM Ensemble Classifier for Early Diabetes Risk Screening</strong><br/>
-  <em><a href="https://Krishna-Vijay-G.github.io">Krishna Vijay G</a> • Hygieia AI Healthcare Platform</em>
+  <em><a href="https://arkhins.com">Arkhins</a> • Hygieia AI Healthcare Platform</em>
 </div>
 </div>
 
@@ -572,5 +572,5 @@ Status: PRODUCTION READY ✅
 <p align="center">
   <strong>Diabetes Risk Predictive Model v4.0</strong><br/>
   <em>Hygieia AI Healthcare Platform</em><br/>
-  <a href="https://Krishna-Vijay-G.github.io">Krishna Vijay G</a>
+  <a href="https://arkhins.com">Arkhins</a>
 </p>
